@@ -1,0 +1,3 @@
+justInvoke(fn){
+  return fn
+}
