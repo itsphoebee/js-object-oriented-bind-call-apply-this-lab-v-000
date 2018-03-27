@@ -12,4 +12,5 @@ function setThisWithApply(fn, value, args){
 
 function returnNewFunctionOf(fn, value){
   return newFn = fn.bind(value)
+  console.log(this)
 }
