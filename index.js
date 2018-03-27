@@ -1,3 +1,3 @@
 justInvoke(fn){
-  return fn;
+  return justInvoke.call(fn);
 }
