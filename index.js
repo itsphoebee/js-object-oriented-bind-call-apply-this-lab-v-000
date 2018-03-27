@@ -10,6 +10,6 @@ function setThisWithApply(fn, variable, [argument1, argument2]){
   return fn.apply(variable, [argument1, argument2])
 }
 
-function returnNewFunctionOf(fn, variable){
-  let newFn = fn.bind(variable)
+function returnNewFunctionOf(fn){
+  let newFn = fn.bind(this)
 }
