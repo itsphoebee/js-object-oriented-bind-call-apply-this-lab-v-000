@@ -7,5 +7,5 @@ function setThisWithCall(fn, variable, argument){
 }
 
 function setThisWithApply(fn, variable, argument){
-  return fn.apply([variable, argument])
+  return fn.apply(variable, [argument])
 }
