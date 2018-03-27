@@ -2,6 +2,6 @@ function justInvoke(fn){
   return fn();
 }
 
-function setThisWithCall(fn){
-  let bob = fn.call();
+function setThisWithCall(fn, variable, argument){
+  return fn.call(variable, argument);
 }
