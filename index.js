@@ -2,14 +2,14 @@ function justInvoke(fn){
   return fn();
 }
 
-function setThisWithCall(fn, variable, argument){
-  return fn.call(variable, argument);
+function setThisWithCall(fn, value, argument){
+  return fn.call(value, argument);
 }
 
-function setThisWithApply(fn, variable, [argument1, argument2]){
-  return fn.apply(variable, [argument1, argument2])
+function setThisWithApply(fn, value, [argument1, argument2]){
+  return fn.apply(value, [argument1, argument2])
 }
 
-function returnNewFunctionOf(fn){
+function returnNewFunctionOf(fn, value){
   let newFn = fn.bind(this)
 }
